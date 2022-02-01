@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <nav>
+        <section class="mobile">
+            <img src="images/logo.svg" alt="logo">
+                
+            <div class="open-button" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="close-button hidden"onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+            </div>
+
+        </section>
+
+        <main class="menu">
+
+            <div class="left-side">
+                <img src="images/logo.svg" alt="logo">
+                
+                <div class="dropdown" data-dropdown>
+                    <button class="link"data-dropdown-button>
+                        Products
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#">Overview</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Marketplace</a>
+                        <a href="#">Features</a>
+                        <a href="#">Integrations</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" data-dropdown>
+                    <button class="link" data-dropdown-button>Company
+                      <i class="fas fa-caret-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-menu">
+                      <a href="#">About</a>
+                      <a href="#">Team</a>
+                      <a href="#">Careers</a>
+                      <a href="#">Blog</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" data-dropdown>
+                    <button class="link" data-dropdown-button> Connect
+                      <i class="fas fa-caret-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-menu">
+                      <a href="#">Contact</a>
+                      <a href="#">Newsletter</a>
+                      <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="right-side">
+                <a  href="#">Login</a>
+                <a  href="#">Sign Up</a>
+              </div>
+
+        </main>
+
+        <header>
+            <div class="header-area">
+                <h1 class="title">A modern publishing platform</h1>
+                <p>Grow your audience and build your online brand</p>
+
+                <div class="link-area">
+                    <a href="#">Start for Free</a>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </header>
+    </nav>
+</body>   
+<script src="script.js"></script>
+</html>
