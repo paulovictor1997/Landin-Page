@@ -180,6 +180,130 @@ header .header-area .link-area a:hover {
   color: #ff525d;
 }
 
+#container {
+  width: 100%;
+  height: 100vh;
+}
+
+#container h1 {
+  text-align: center;
+  color: #1f3f5b;
+  margin-top: 100px;
+}
+
+.content-area1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-area1 img {
+  margin-top: 50px;
+}
+
+.content-area1 .mobile-picture {
+  display: none;
+}
+
+.content-area1 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  margin: 50px;
+  margin-top: 50px;
+}
+
+.content-area1 .content h3 {
+  color: #1f3f5b;
+}
+
+.content-area1 .content .description1 {
+  margin-bottom: 20px;
+}
+
+.content-area1 .content .description1 p {
+  margin-top: 20px;
+  color: #4b5862;
+  text-align: justify;
+  font-family: 'Ubuntu';
+}
+
+.content-area1 .content .description2 {
+  margin-top: 20px;
+}
+
+.content-area1 .content .description2 p {
+  margin-top: 20px;
+  color: #4b5862;
+  text-align: justify;
+  font-family: 'Ubuntu';
+}
+
+.content-area2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #25252d;
+  background-image: url(../images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  border-radius: 0px 60px 0px 60px;
+}
+
+.content-area2 .content2 {
+  padding: 50px;
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 110px;
+}
+
+.content-area2 .content2 .title2 {
+  margin-bottom: 20px;
+  color: white !important;
+}
+
+.content-area2 .content2 p {
+  color: white;
+  text-align: justify;
+  font-family: 'Ubuntu';
+}
+
 @media (max-width: 767px) {
   nav .menu {
     display: none;
@@ -251,6 +375,46 @@ header .header-area .link-area a:hover {
   }
   nav header .header-area .title {
     font-size: 30px;
+  }
+  .content-area1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .content-area1 .content {
+    text-align: center;
+  }
+  .content-area1 .desktop-picture {
+    display: none;
+  }
+  .content-area1 .mobile-picture {
+    display: block;
+  }
+  .content-area2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
 }
 

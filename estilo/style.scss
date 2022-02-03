@@ -42,8 +42,6 @@ nav{
         i{margin-left: 5px;}
     }
 
-    //i{margin-left: 5px;}
-
     .dropdown {
         position: relative;
         cursor: pointer;
@@ -158,6 +156,104 @@ header{
     }
 }
 
+#container{
+    width: 100%;
+    height: 100vh;
+   
+    h1{
+        text-align: center;
+        color: $Verydarkblue;
+        margin-top: 100px;
+    }
+}
+
+.content-area1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        margin-top: 50px;
+    }
+
+
+    .mobile-picture{
+        display: none;
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+        margin: 50px;
+        margin-top: 50px;
+
+        h3{
+            color: $Verydarkblue;
+            
+        }
+
+        .description1{
+            margin-bottom: 20px;
+        
+            p{
+                margin-top: 20px;
+                color: $Verydarkgrayishblue;
+                text-align: justify;
+                font-family: 'Ubuntu';
+            }
+        }
+
+        .description2{
+
+            margin-top: 20px;
+            p{
+                margin-top: 20px;
+                color: $Verydarkgrayishblue;
+                text-align: justify;
+                font-family: 'Ubuntu';
+            }
+        }
+    }
+}
+
+.content-area2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $Verydarkblackblue;
+    background-image: url(../images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position:left;
+    border-radius: 0px 60px 0px 60px;
+    
+    .content2{
+        padding: 50px;
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        //width: 550px;
+        margin-bottom: 110px;
+
+        .title2{
+            margin-bottom: 20px;
+            color: $color1 !important;
+        }
+
+        p{
+            color: $color1;
+            text-align: justify;
+            font-family: 'Ubuntu';
+        }
+
+    }
+}
+
 @media (max-width:767px){
     nav{
 
@@ -225,6 +321,34 @@ header{
             }
         }
     
+}
+
+.content-area1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+
+        .content{
+            text-align: center;
+        }
+
+
+        .desktop-picture{
+            display: none;
+        }
+
+        .mobile-picture{
+            display: block;
+        }
+}
+
+    .content-area2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
 
    
