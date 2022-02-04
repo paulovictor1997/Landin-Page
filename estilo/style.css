@@ -383,11 +383,20 @@ footer {
 }
 
 footer img {
-  margin-right: 10%;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
-footer .link-footer {
+footer .footer-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+footer .footer-area .link-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,21 +404,23 @@ footer .link-footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px;
-  margin: 50px;
-}
-
-footer .link-footer .title-footer {
-  color: white;
-}
-
-footer .link-footer a {
-  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
+}
+
+footer .footer-area .link-footer .title-footer {
   color: white;
 }
 
-footer .link-footer a:hover {
+footer .footer-area .link-footer a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+footer .footer-area .link-footer a:hover {
   text-decoration: underline;
 }
 
@@ -552,30 +563,19 @@ footer .link-footer a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  footer img {
-    margin-left: 70px;
-  }
-  footer .link-footer {
+  footer .footer-area {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
