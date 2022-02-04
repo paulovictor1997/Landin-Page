@@ -254,6 +254,89 @@ header{
     }
 }
 
+.content-area3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content3{
+        padding: 50px;
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h3{
+            color: $Verydarkblue !important; 
+        }
+
+        .description3{
+            margin-bottom: 20px;
+        
+            p{
+                margin-top: 20px;
+                color: $Verydarkgrayishblue;
+                text-align: justify;
+                font-family: 'Ubuntu';
+            }
+        }
+
+        .description4{
+            margin-bottom: 20px;
+        
+            p{
+                margin-top: 20px;
+                color: $Verydarkgrayishblue;
+                text-align: justify;
+                font-family: 'Ubuntu';
+            }
+        }
+    }
+
+    .mobile-picture-2{
+        display: none;
+    }
+}
+
+footer{
+    width: 100%;
+    background-color: $Verydarkblackblue ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 20px;
+    border-radius: 0px 60px 0px 0px;
+
+    img{
+        margin-right: 10%;
+        margin-bottom: 15%;
+    }
+
+    .link-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        margin: 50px;
+
+        .title-footer{
+            color: $color1;
+        }
+
+        a{
+            text-decoration: none;
+            padding: 10px;
+            color: $color1;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
 @media (max-width:767px){
     nav{
 
@@ -351,7 +434,41 @@ header{
         text-align: center;
     }
 
-   
+    .content-area3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        .desktop-picture-2{
+            display: none;
+        }
+
+        .mobile-picture-2{
+            display: block;
+        }
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            margin-left: 70px;
+        }
+
+        .link-footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+    }
+
 }
 
 @media (min-width: 768px) {
