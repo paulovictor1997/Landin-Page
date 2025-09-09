@@ -4,4 +4,131 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Overpass";
+}
+
+.header {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header .nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header .nav__list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.header .nav__item {
+  position: relative;
+}
+.header .nav__item .nav__link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.header .nav__item .dropdown__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #333;
+  padding: 0.5rem 0;
+  list-style: none;
+  min-width: 150px;
+}
+.header .nav__item .dropdown__menu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+.header .nav__item .dropdown__menu li a:hover {
+  background: #444;
+}
+.header .nav__item:hover .dropdown__menu {
+  display: block;
+}
+.header .nav__buttons {
+  display: flex;
+  gap: 1rem;
+}
+.header .nav__buttons .btn {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.header .nav__buttons .btn--login {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.header .nav__buttons .btn--signup {
+  background: #ff4d4d;
+  color: #fff;
+}
+.header .hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .header .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #222;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    display: none;
+  }
+  .header .nav.active {
+    display: flex;
+  }
+  .header .nav__list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .header .nav__buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .header .nav__buttons .btn {
+    width: auto;
+    min-width: 120px;
+    text-align: center;
+  }
+  .header .nav .dropdown__menu {
+    position: static;
+    background: #333;
+    width: 100%;
+    text-align: center;
+  }
+  .header .hamburger {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

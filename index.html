@@ -8,8 +8,56 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
   <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="estilo/style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+<header class="header">
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">MinhaLogo</div>
+
+    <!-- Menu desktop -->
+    <nav class="nav" id="navMenu">
+      <ul class="nav__list">
+        <li class="nav__item dropdown">
+          <a href="#" class="nav__link">Serviços ▾</a>
+          <ul class="dropdown__menu">
+            <li><a href="#">Consultoria</a></li>
+            <li><a href="#">Desenvolvimento</a></li>
+            <li><a href="#">Suporte</a></li>
+          </ul>
+        </li>
+        <li class="nav__item dropdown">
+          <a href="#" class="nav__link">Produtos ▾</a>
+          <ul class="dropdown__menu">
+            <li><a href="#">App Mobile</a></li>
+            <li><a href="#">Sistema Web</a></li>
+            <li><a href="#">API</a></li>
+          </ul>
+        </li>
+        <li class="nav__item dropdown">
+          <a href="#" class="nav__link">Sobre ▾</a>
+          <ul class="dropdown__menu">
+            <li><a href="#">Equipe</a></li>
+            <li><a href="#">Carreiras</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Botões -->
+      <div class="nav__buttons">
+        <button class="btn btn--login">Login</button>
+        <button class="btn btn--signup">Sign Up</button>
+      </div>
+    </nav>
+
+    <!-- Botão mobile -->
+    <button class="hamburger" id="hamburger">
+      ☰
+    </button>
+  </div>
+</header>
 
 </body>
 </html>
